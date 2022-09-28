@@ -1,0 +1,68 @@
+main {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    justify-items: center;
+    gap: 20px;
+}
+
+.container {
+    display: grid;
+    grid-auto-rows: min-content;
+    gap: 10px;
+}
+
+.container > p {
+    text-align: center;
+    margin: 5px;
+    font-size: 1em;
+    min-height: 1em;
+}
+
+form {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+form input {
+    height: 40px;
+    padding-left: 10px;
+    font-size: 1.1em;
+}
+
+form button {
+    height: 40px;
+    padding: 0 10px;
+}
+
+button {
+    border: 1px solid var(--action-color);
+    padding: 5px 10px;
+}
+
+#todo-list {
+    width: max-content;
+    min-width: 400px;
+    background: white;
+    box-shadow: var(--box-shadow);
+}
+
+li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 20px;
+}
+
+li.complete {
+    text-decoration: line-through;
+}
+
+li:nth-child(odd) {
+    background: white;
+}
+
+li:nth-child(even) {
+    background: rgb(249 247 242);
+}
