@@ -36,6 +36,7 @@ export async function createTodo(todo) {
 
 export async function getTodos() {
     // > Part B: Get all todos for this user from supabase
+    return await client.from('todos').select('*').order('created_at');
 }
 
 export async function completeTodo(id) {
